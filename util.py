@@ -1,4 +1,4 @@
-import pandas as pd
+from pandas import read_excel
 
 
 def retrieve_column_connection(path):
@@ -7,7 +7,7 @@ def retrieve_column_connection(path):
     :param path: Column connections file path
     :return: Data frame with column connection data
     """
-    return pd.read_excel(path)
+    return read_excel(path)
 
 
 def distinct_workbook_worksheet(df_column_connections):
